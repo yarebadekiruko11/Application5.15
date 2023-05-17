@@ -8,7 +8,7 @@ class ListsController < ApplicationController
     if @list.save
      redirect_to list_path(@list.id)
     else
-      render :new
+     render :new
     end
   end
 
@@ -17,10 +17,6 @@ class ListsController < ApplicationController
      list.destroy
      redirect_to '/lists'
   end
-
-
-
-
 
 
   def index
