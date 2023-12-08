@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 describe '投稿のテスト' do
-  let!(:list) { create(:list, titel:'hoge',body:'body') }
+  let!(:list) { create(:list, title:'hoge',body:'body') }
 
 
   describe 'トップ画面のテスト' do
