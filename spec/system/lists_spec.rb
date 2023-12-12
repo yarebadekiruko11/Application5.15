@@ -71,5 +71,10 @@ describe '投稿のテスト' do
         except(current_path).to eq('/lists/' + list.id.to_s + '/edit')
       end
     end
+    context 'list削除のテスト' do
+      it 'listの削除' do
+        expect{ list.destroy }.to change{ List.count }.by(-1)
+      end
+    end
   end
 end
